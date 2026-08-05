@@ -1,5 +1,7 @@
 # board-mcp
 
+> 一个MCP小工具，MCP公告板，可以让ai工具协调工作。
+
 多终端 AI 协作公告板 MCP 服务器。让并行工作的 Claude Code / Codex / OpenCode / Trae
 在**撞车前**协调好"谁在改哪个文件"。
 
