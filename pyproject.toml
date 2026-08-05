@@ -1,0 +1,18 @@
+﻿# pyproject.toml —— 项目的"身份证"
+#
+# uv（我们用的 Python 包管理器）看到这个文件就会：
+#   1. 在项目里自动创建 .venv 虚拟环境
+#   2. 按 dependencies 安装依赖（这里只有一个 mcp）
+#   3. 以后用 `uv run python server.py` 就能直接跑，不用手动激活环境
+
+[project]
+name = "board-mcp"            # 项目名
+version = "0.1.0"             # 版本号
+description = "MCP 公告栏：多终端 AI 并行协作的认领/汇报公告板"
+requires-python = ">=3.10"    # 需要 Python 3.10 及以上（你的机器是 3.14，满足）
+
+# 依赖列表：mcp 是官方 MCP SDK，server.py 里的 FastMCP 就来自它
+# 注意：mcp 2.0 移除了 FastMCP，所以我们钉在 1.x（<2 表示小于 2）
+dependencies = [
+    "mcp>=1.5,<2",
+]

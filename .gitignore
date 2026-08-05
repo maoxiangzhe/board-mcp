@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# 虚拟环境（每台机器自己 uv sync）
+.venv/
+
+# 备份
+*.bak
+*.orig
+
+# 操作系统
+Thumbs.db
+Desktop.ini
